@@ -49,7 +49,7 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--brand-blue);
+  background-color: var(--brand-blue) !important;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -61,6 +61,16 @@ body {
 .site-navbar .navbar-brand img {
   height: 60px;
 }
+
+/* .navbar-collapse{
+  margin-right: 220px !important; 
+  /* align items to the right */
+
+
+/* .site-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+} */
 
 .hero-section {
   position: relative;
@@ -158,6 +168,11 @@ body {
   color: #000;
   font-size: 20px;
   margin-right: 12px;
+}
+
+#accordion{
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 /* FOOTER */
@@ -347,6 +362,11 @@ footer a:hover {
   margin-left: 40px !important;
 }
 
+#accordion{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .text-muted-2{
   font-size: 10px !important;
   padding-bottom: 14px !important;
@@ -378,7 +398,6 @@ body {
 
 /* NAVBAR */
 
-
 .site-navbar-2 {
   background-color: white !important;
   height: 75px;
@@ -397,9 +416,9 @@ body {
   transition: all 0.3s ease;
   position: relative;
   text-decoration: none !important;
+  padding: 20px !important;
 }
 
-/* Hover effect */
 .site-navbar-2 .nav-link-2:hover {
   color: var(--orange) !important;
   border-radius: 5px;
@@ -413,7 +432,7 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--orange) !important;
+  background-color: var(--orange);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -421,6 +440,11 @@ body {
 .site-navbar-2 .nav-link-2:hover::after {
   width: 60%;
 }
+
+.site-navbar-2 .navbar-brand img {
+  height: 60px;
+}
+
 
 .site-navbar-2 .navbar-brand img {
   height: 60px;
@@ -500,8 +524,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--brand-soft);
-  color: #000;
+  background: var(--brand-blue);
+  color: #FFF;
   font-size: 20px;
   margin-right: 12px;
 }
@@ -600,7 +624,7 @@ footer a:hover {
     padding-top: 70px;
   }
 
-  .site-navbar .navbar-brand img {
+  .site-navbar-2 .navbar-brand img {
     height: 36px;
   }
 
