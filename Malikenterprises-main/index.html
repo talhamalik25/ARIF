@@ -35,7 +35,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./product.html">Products</a></li>
@@ -48,7 +48,7 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <div id="carouselExampleIndicators" class="carousel slide ">
+  <div id="carouselExampleIndicators" class="carousel slide h-75" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -57,7 +57,7 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner  h-25" style="margin-top: 0% !important;">
+    <div class="carousel-inner  h-25 d-inline-block" style="margin-top: 0% !important;">
       <div class="carousel-item active">
         <img src="./images/herosection.jpeg" class="d-block w-100  img-fluid" alt="...">
       </div>
@@ -79,9 +79,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
-
 
   <!-- FEATURED PRODUCTS -->
   <section id="products" class="featured py-5">
@@ -146,9 +143,9 @@
   <!-- OUR CLIENTS -->
   <section id="clients" class="py-4">
     <div class="container">
-      <h2 class="mb-3" style="text-align: center;" >Our Clients</h2>
+      <h2 class="mb-3" style="text-align: center;">Our Clients</h2>
       <!-- Use your real client logos or placeholders -->
-      <div class="d-flex flex-wrap justify-content-start align-items-center gap-4">
+      <div class="d-flex flex-wrap justify-content-center align-items-center p-4 gap-5">
         <img src="./images/download__1_-removebg-preview.png" alt="Client 1" class="client-logo">
         <img src="./images/download-removebg-preview.png" alt="Client 2" class="client-logo">
         <img src="./images/bahria-town-logo-png_seeklogo-216843-removebg-preview.png" alt="Client 3"
@@ -165,7 +162,8 @@
   </section>
 
   <!-- WHY CHOOSE US -->
-  <section class="why py-5" style="background: linear-gradient(180deg, rgba(3,37,77,0.03), rgba(195,169,149,0.02)); text-align: center;">
+  <section class="why py-5"
+    style="background: linear-gradient(180deg, rgba(3,37,77,0.03), rgba(195,169,149,0.02)); text-align: center;">
     <div class="container" style="padding: 60px !important;">
       <h2 class="mb-4">Why Choose Us</h2>
       <div class="row g-3" style="padding: 30px;">
@@ -203,264 +201,290 @@
   </section>
 
   <!-- Accordion Section -->
-<section id="accordion">
+  <section id="accordion">
 
-  <h2 style="text-align: center;">FAQ's</h2>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <h2 style="text-align: center;">FAQ's</h2>
+    <div class="accordion accordion-flush d-flex justify-content-center w-75 flex-column mx-auto" id="accordionFlushExample">
 
 
- <div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-      Loader Vehicle Transport
-    </button>
-  </h2>
-  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      We offer specialized transportation services for loader vehicles of all sizes. Our fleet is equipped with reinforced trailers, secure tie-down systems, and experienced operators to ensure safe handling from loading to delivery.
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Loader Vehicle Transport
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            We offer specialized transportation services for loader vehicles of all sizes. Our fleet is equipped with
+            reinforced trailers, secure tie-down systems, and experienced operators to ensure safe handling from loading
+            to delivery.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Crane Transport
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Our team is trained to transport cranes with precision and care. We provide route planning, permits, and
+            secure loading to handle oversized and heavy equipment efficiently.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Machinery & Equipment Transport
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            From construction machinery to industrial equipment, we provide reliable, heavy-duty transport solutions. We
+            prioritize safety, stability, and timely delivery.
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN PAGE ACCORDION BELOW -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Coveralls
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            We provide high-quality, durable coveralls designed for maximum protection and comfort. Perfect for
+            industrial and field work environments.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            T-Shirts
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Our t-shirts are made from breathable fabric, ensuring comfort and durability. Available in multiple colors
+            and styles to suit your branding.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            Uniforms
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            We supply a variety of professional uniforms designed for safety, comfort, and a polished appearance
+            suitable for any industry.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            Safety Shoes
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Our safety shoes are built for protection and comfort, featuring anti-slip soles, steel toes, and durable
+            materials suitable for tough work conditions.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+            Jackets
+          </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Our jackets offer warmth, durability, and professional styling, perfect for outdoor and industrial work
+            environments.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+            Gloves
+          </button>
+        </h2>
+        <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            We provide high-quality work gloves designed to protect hands while ensuring flexibility and comfort during
+            work.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+            Reflective Vests
+          </button>
+        </h2>
+        <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Our reflective vests enhance visibility and safety in low-light conditions, perfect for construction and
+            roadside work.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+            Safety Helmets
+          </button>
+        </h2>
+        <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Our safety helmets are made to meet industry standards, offering excellent impact protection and comfort for
+            workers on-site.
+          </div>
+        </div>
+      </div>
+
+
     </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-      Crane Transport
-    </button>
-  </h2>
-  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      Our team is trained to transport cranes with precision and care. We provide route planning, permits, and secure loading to handle oversized and heavy equipment efficiently.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-      Machinery & Equipment Transport
-    </button>
-  </h2>
-  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      From construction machinery to industrial equipment, we provide reliable, heavy-duty transport solutions. We prioritize safety, stability, and timely delivery.
-    </div>
-  </div>
-</div>
-
-<!-- MAIN PAGE ACCORDION BELOW -->
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-      Coveralls
-    </button>
-  </h2>
-  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      We provide high-quality, durable coveralls designed for maximum protection and comfort. Perfect for industrial and field work environments.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-      T-Shirts
-    </button>
-  </h2>
-  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      Our t-shirts are made from breathable fabric, ensuring comfort and durability. Available in multiple colors and styles to suit your branding.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-      Uniforms
-    </button>
-  </h2>
-  <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      We supply a variety of professional uniforms designed for safety, comfort, and a polished appearance suitable for any industry.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-      Safety Shoes
-    </button>
-  </h2>
-  <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      Our safety shoes are built for protection and comfort, featuring anti-slip soles, steel toes, and durable materials suitable for tough work conditions.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-      Jackets
-    </button>
-  </h2>
-  <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      Our jackets offer warmth, durability, and professional styling, perfect for outdoor and industrial work environments.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-      Gloves
-    </button>
-  </h2>
-  <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      We provide high-quality work gloves designed to protect hands while ensuring flexibility and comfort during work.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-      Reflective Vests
-    </button>
-  </h2>
-  <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      Our reflective vests enhance visibility and safety in low-light conditions, perfect for construction and roadside work.
-    </div>
-  </div>
-</div>
-
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-      Safety Helmets
-    </button>
-  </h2>
-  <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body">
-      Our safety helmets are made to meet industry standards, offering excellent impact protection and comfort for workers on-site.
-    </div>
-  </div>
-</div>
-
-
-</div>
   </section>
 
-  <section class="testimonials pb-2 pt-10">
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-10 col-xl-8 text-center">
-      <h3 class="mb-4">What our Clients say</h3>
-      <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-        numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-        quisquam eum porro a pariatur veniam.
-      </p>
+  <!-- Clients Testimonials -->
+  <section class="w-75 py-5 d-flex justify-content-center align-items-center flex-column mx-auto">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4 pt-5">What our Clients say</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+          numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+          quisquam eum porro a pariatur veniam.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="row text-center">
-    <div class="col-md-4 mb-5 mb-md-0">
-      <div class="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-          class="rounded-circle shadow-1-strong" width="150" height="150" />
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Maria Smantha</h5>
+        <h6 class="text-primary mb-3">Web Developer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+          </li>
+        </ul>
       </div>
-      <h5 class="mb-3">Maria Smantha</h5>
-      <h6 class="text-primary mb-3">Web Developer</h6>
-      <p class="px-xl-3">
-        <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-        tenetur.
-      </p>
-      <ul class="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star-half-alt fa-sm text-warning"></i>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-4 mb-5 mb-md-0">
-      <div class="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Lisa Cudrow</h5>
+        <h6 class="text-primary mb-3">Graphic Designer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
       </div>
-      <h5 class="mb-3">Lisa Cudrow</h5>
-      <h6 class="text-primary mb-3">Graphic Designer</h6>
-      <p class="px-xl-3">
-        <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
-        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
-      </p>
-      <ul class="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-4 mb-0">
-      <div class="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">John Smith</h5>
+        <h6 class="text-primary mb-3">Marketing Specialist</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+          dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
       </div>
-      <h5 class="mb-3">John Smith</h5>
-      <h6 class="text-primary mb-3">Marketing Specialist</h6>
-      <p class="px-xl-3">
-        <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
-        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
-      </p>
-      <ul class="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="far fa-star fa-sm text-warning"></i>
-        </li>
-      </ul>
     </div>
-  </div>
-</section>
+  </section>
+
+  <div class="embed-map-responsive"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=200&hl=en&q=Karachi%20university&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki retake</a></div><style>.embed-map-responsive{position:relative;text-align:right;width:100%;height:0;padding-bottom:33.33333333333333%;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:100%;position:absolute;top:0;left:0;}.embed-map-frame{width:100%!important;height:100%!important;position:absolute;top:0;left:0;}</style></div>
 
   <!-- CONTACT + FOOTER -->
   <footer id="contact" style="background-color: #ffffff !important; border-top: 2px solid #ccc;"
@@ -526,6 +550,6 @@
   <!-- Bootstrap Icons (for small icons used above) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css">
 
-
 </body>
+
 </html>
