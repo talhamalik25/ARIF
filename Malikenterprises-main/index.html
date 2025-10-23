@@ -13,12 +13,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "iouqgmxN6jD_w1Ufh",
+      });
+   })();
+</script>
+
+<script src="./script.js"></script>
 
 
 </head>
 
 <body>
-
 
   <!-- NAVBAR -->
   <nav class="site-navbar navbar navbar-expand-lg sticky-top">
@@ -204,7 +216,8 @@
   <section id="accordion">
 
     <h2 style="text-align: center;">FAQ's</h2>
-    <div class="accordion accordion-flush d-flex justify-content-center w-75 flex-column mx-auto" id="accordionFlushExample">
+    <div class="accordion accordion-flush d-flex justify-content-center w-75 flex-column mx-auto"
+      id="accordionFlushExample">
 
 
       <div class="accordion-item">
@@ -383,7 +396,7 @@
   <section class="w-75 py-5 d-flex justify-content-center align-items-center flex-column mx-auto">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h3 class="mb-4 pt-5">What our Clients say</h3>
+        <h2 class="mb-4 pt-5">What our Clients say</h2>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
           numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
@@ -484,11 +497,75 @@
     </div>
   </section>
 
-  <div class="embed-map-responsive"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=200&hl=en&q=Karachi%20university&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki retake</a></div><style>.embed-map-responsive{position:relative;text-align:right;width:100%;height:0;padding-bottom:33.33333333333333%;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:100%;position:absolute;top:0;left:0;}.embed-map-frame{width:100%!important;height:100%!important;position:absolute;top:0;left:0;}</style></div>
+  <!-- Maps -->
+  <section>
+    <h2 style="text-align: center; padding: 30px;">Our Location</h2>
+
+    <div class="embed-map-responsive display-flex; justify-content:center; align-items:center;">
+      <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=600&height=200&hl=en&q=Karachi%20university&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+          href="https://sprunkiretake.net"
+          style="font-size:2px!important; color:gray!important; position:absolute; bottom:0; left:0; z-index:1; max-height:1px; overflow:hidden; display:flex; justify-content:center;">sprunki
+          retake</a></div>
+      <style>
+        .embed-map-responsive {
+          padding-left: 40px;
+          position: relative;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 0;
+          padding-bottom: 33.33333333333333%;
+          padding-left: 200px;
+        }
+
+        .embed-map-container {
+          overflow: hidden;
+          background: none !important;
+          margin-left: 22%;
+          text-align: center;
+          width: 75%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .embed-map-frame {
+          width: 75% !important;
+          height: 80% !important;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      </style>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2 style="text-align: center; padding: 20px;">Have any questions? Reach out to us!</h2>
+
+    <div class="form-container d-flex flex-column w-50 mx-auto pb-5">
+      <label for="exampleFormControlInput1" class="form-label mt-4">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <label for="exampleFormControlInput1" class="form-label mt-4"> Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Your Name">
+      <label for="exampleFormControlTextarea1" class="form-label mt-4">Example Textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="What's your question?"></textarea>
+      <button class="btn-send" type="submit" onclick="sendEmail()">Send</button>
+    </div>
+  </section>
 
   <!-- CONTACT + FOOTER -->
   <footer id="contact" style="background-color: #ffffff !important; border-top: 2px solid #ccc;"
     class="site-footer py-5">
+
+    <div class="circle">
+      <h1><a href="tel:03142209297"><i class="fa-solid fa-phone-volume"></i></a></h1>
+    </div>
     <div class="container">
 
       <div class="row">
